@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo simples </title>
+</head>
+<body>
+    <script>
+        let numero1 = parseFloat(prompt("Insira o primeiro número: "));
+        let numero2 = parseFloat(prompt("Insira o primeiro segundo: "));
+        let operacao = parseInt(prompt("*Selecione a operação*\n[1]Adição\n[2]subtração\n[3]multiplicação\n[4]Divisão \n ou pressione ENTER para sair"));
+
+        while(operacao < 1 || operacao >4){    
+            alert("Selecione um número correspondente a operação");
+            operacao = parseInt(prompt("*Selecione a operação*\n[1]Adição\n[2]subtração\n[3]multiplicação\n[4]Divisão\n ou pressione ENTER para sair"));
+
+        }
+
+        if(operacao == 1){  
+            alert("Você escolheu a operação de Soma**");
+           let calculosoma= numero1 + numero2;
+           alert("A soma dos dois número é igual a: " + calculosoma);
+        }
+
+          if(operacao == 2){  
+            alert("Você escolheu a operação de Subtração**");
+           let calculosubtracao= numero1 - numero2;
+           alert("A subtração dos dois número é igual a: " + calculosubtracao);
+        }
+          if(operacao == 3){  
+            alert("Você escolheu a operação de Multiplicação**");
+           let calculomultiplicacao= numero1 * numero2;
+           alert("A multiplicação dos dois número é igual a: " + calculomultiplicacao);
+        }
+          if(operacao == 4){  
+            alert("Você escolheu a operação de Divisão**");
+           let calculodivisao= numero1 / numero2;
+           alert("A divisão dos dois número é igual a: " + calculodivisao);
+        }
+
+    </script>
+</body>
+</html>
